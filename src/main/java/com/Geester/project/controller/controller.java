@@ -19,10 +19,10 @@ public class controller {
 
 
     @GetMapping("/counter")
-    public int numberOfCount(){
+    public String numberOfCount(){
         services.counter();
-        return data.getCount();
-    }
 
+        return "Vistor  No.  "+data.getCount();
+    }
 
 }
